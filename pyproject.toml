@@ -4,7 +4,13 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12.8"
-dependencies = []
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "lxml>=5.4.0",
+    "prompt-toolkit>=3.0.51",
+    "requests>=2.32.3",
+    "validators>=0.35.0",
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -14,4 +20,4 @@ build-backend = "hatchling.build"
 packages = ["parser"]
 
 [project.scripts]
-parser = "parser.scripts.main:main"
+parser = "parser.main:main"
