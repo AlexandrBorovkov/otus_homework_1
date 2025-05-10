@@ -19,5 +19,10 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["parser"]
 
+[dependency-groups]
+dev = [
+    "ruff>=0.11.9",
+]
+
 [project.scripts]
 parser = "parser.main:main"

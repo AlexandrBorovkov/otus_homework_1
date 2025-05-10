@@ -3,3 +3,6 @@ install:
 
 start:
 	uv run parser
+
+lint:
+	uv run ruff check
